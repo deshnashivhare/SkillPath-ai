@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+</head>
 
+<body>
+
+<h2>Analysis Result</h2>
+
+<h3>Your Skills</h3>
+<p>{{ skills }}</p>
+
+<h3>Skill Match</h3>
+<p>{{ match }} %</p>
+
+<h3>Missing Skills</h3>
+<p>{{ missing }}</p>
+
+<h3>Recommended Courses</h3>
+<ul>
+{% for course in courses %}
+<li>{{ course }}</li>
+{% endfor %}
+</ul>
+
+<h3>Job Selection Prediction</h3>
+<p>{{ prediction }}</p>
+
+</body>
+</html>
